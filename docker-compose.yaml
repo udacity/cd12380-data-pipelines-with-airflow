@@ -93,6 +93,8 @@ services:
       POSTGRES_USER: airflow
       POSTGRES_PASSWORD: airflow
       POSTGRES_DB: airflow
+    # Install re2 library
+    #command: bash -c 'apt-get update && apt-get install -y libre2-dev && rm -rf /var/lib/apt/lists/*'
     volumes:
       - postgres-db-volume:/var/lib/postgresql/data
     healthcheck:

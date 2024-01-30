@@ -9,6 +9,12 @@ A helper class containing all necessary SQL transformations is at your disposal.
 ## Initiating the Airflow Web Server
 Ensure [Docker Desktop](https://www.docker.com/products/docker-desktop/) is installed before proceeding.
 
+If you wish to run Airflow on a port number different from the default, you can create a `.env` file in the repository's home directory and configure the `AIRFLOW_PORT` environment variable. For instance, if you prefer using port number 8027, the content of the `.env` will be
+
+```bash
+AIRFLOW_PORT=8027
+```
+
 To bring up the entire app stack up, we use [docker-compose](https://docs.docker.com/engine/reference/commandline/compose_up/) as shown below
 
 ```bash
